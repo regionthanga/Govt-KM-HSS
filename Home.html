@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Govt. KM Higher Secondary School</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,Arial,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#0b4f9c;
+    color:#fff;
+    padding:15px 40px;
+}
+
+.header-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+    margin-right:15px;
+    border-radius:50%;
+    background:#fff;
+}
+
+.logo h2{
+    margin-bottom:5px;
+}
+
+.logo p{
+    font-size:14px;
+}
+
+/* Navigation */
+nav{
+    background:#083d77;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    position:relative;
+}
+
+nav ul li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:16px 22px;
+    transition:.3s;
+}
+
+nav ul li:hover{
+    background:#0d5db8;
+}
+
+/* Dropdown */
+nav ul li ul{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#0d5db8;
+    min-width:220px;
+    z-index:100;
+}
+
+nav ul li:hover ul{
+    display:block;
+}
+
+nav ul li ul li{
+    width:100%;
+}
+
+nav ul li ul li a{
+    padding:12px 18px;
+}
+
+/* Hero */
+.hero{
+    height:450px;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("school.jpg") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.hero a{
+    display:inline-block;
+    padding:12px 28px;
+    background:#ffc107;
+    color:#000;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* Notice */
+.notice{
+    background:#fff8d5;
+    border-left:6px solid orange;
+    width:90%;
+    margin:30px auto;
+    padding:20px;
+}
+
+/* Section */
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+.section-title{
+    text-align:center;
+    color:#0b4f9c;
+    margin-bottom:30px;
+    font-size:34px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#0b4f9c;
+    margin-bottom:15px;
+}
+
+/* Footer */
+footer{
+    background:#083d77;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.header-container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+nav ul{
+    flex-direction:column;
+}
+
+nav ul li ul{
+    position:static;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="header-container">
+
+<div class="logo">
+<img src="logo.png" alt="School Logo">
+
+<div>
+<h2>Govt. KM Higher Secondary School</h2>
+<p>Learning Today • Leading Tomorrow</p>
+</div>
+
+</div>
+
+<div>
+<h3>Established 19XX</h3>
+</div>
+
+</div>
+
+</header>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About ▾</a>
+
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="vision.html">Vision & Mission</a></li>
+<li><a href="principal.html">Principal's Message</a></li>
+<li><a href="infrastructure.html">Infrastructure</a></li>
+</ul>
+
+</li>
+
+<li>
+<a href="#">Academics ▾</a>
+
+<ul>
+<li><a href="courses.html">Courses Offered</a></li>
+<li><a href="departments.html">Departments</a></li>
+<li><a href="routine.html">Class Routine</a></li>
+<li><a href="results.html">Examination & Results</a></li>
+</ul>
+
+</li>
+
+<li>
+<a href="#">Faculty ▾</a>
+
+<ul>
+<li><a href="faculty.html">List of Faculty</a></li>
+<li><a href="administration.html">Administration</a></li>
+<li><a href="office.html">Office Staff</a></li>
+</ul>
+
+</li>
+
+<li>
+<a href="#">CCA ▾</a>
+
+<ul>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="cultural.html">Cultural Activities</a></li>
+<li><a href="clubs.html">School Clubs</a></li>
+<li><a href="nss.html">NSS / Scouts & Guides</a></li>
+</ul>
+
+</li>
+
+<li>
+<a href="#">Students ▾</a>
+
+<ul>
+<li><a href="admission.html">Admission</a></li>
+<li><a href="scholarship.html">Scholarships</a></li>
+<li><a href="library.html">Library</a></li>
+<li><a href="downloads.html">Downloads</a></li>
+</ul>
+
+</li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="notice.html">Notice</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Welcome to Govt. KM Higher Secondary School</h1>
+
+<p>Knowledge • Discipline • Excellence</p>
+
+<a href="admission.html">Admission Open</a>
+
+</div>
+
+</section>
+
+<div class="notice">
+
+<h3>📢 Latest Announcement</h3>
+
+<p>
+Admission for Higher Secondary (XI) is now open.
+Students are requested to check the Notice section regularly for updates.
+</p>
+
+</div>
+
+<section class="container">
+
+<h2 class="section-title">Quick Information</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>📚 Academic Excellence</h3>
+<p>Well-qualified teachers, smart classrooms and quality education.</p>
+</div>
+
+<div class="card">
+<h3>👨‍🏫 Experienced Faculty</h3>
+<p>Dedicated and experienced teaching staff committed to student success.</p>
+</div>
+
+<div class="card">
+<h3>🏆 Co-Curricular Activities</h3>
+<p>Sports, debates, music, cultural programmes and educational tours.</p>
+</div>
+
+<div class="card">
+<h3>🧪 Modern Facilities</h3>
+<p>Science laboratories, computer lab, library and playground.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Govt. KM Higher Secondary School</h3>
+
+<p>Your School Address</p>
+
+<p>Phone: +91-XXXXXXXXXX</p>
+
+<p>Email: info@gkmhss.edu.in</p>
+
+<p>© 2026 Govt. KM Higher Secondary School. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
